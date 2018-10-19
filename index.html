@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Hey Nerds</h1>
+    <p>This h1 has a <span>micro-interaction</span> effect triggered using the <span>:hover pseudo element</span></p>
+    <p><span>Micro-interactions</span>, when used <span>properly/sparingly</span>, are a great way for your user to
+      interact with
+      your app/website</p>
+    <p class="unfortunately">unfortunately, when we take our cursor off the h1, the hover effect goes away</p>
+    <p>it'd be <h1>SUPER RAD</h1> if we could get it to persist without needing our cursor to be hovering over it.
+      Unfortunately, without the use of Javascript, this IS FAIRLY unknown of how to do</p>
+  </header>
+
+  <section class="first">
+    <input type="checkbox">
+    <p>This is a Checkbox</p>
+  </section>
+  <section class="first-about">
+    <p>Checking it makes it checked, unchecking it makes it unchecked</p>
+    <p>You can consider a checkbox being checked, as it <span>changing it's state</span> (something you'll learn when
+      you get into React in the next few weeks)</p>
+    <p>Notice, that when I click the checkbox, it <span>stays</span> checked.</p>
+    <p>CSS is <span>insanely</span> powerful, especially when you learn how to <span>chain selectors</span>
+    </p>
+    <i class="fas fa-caret-down"></i>
+    <h1 class="chaining">What the heck is chaining selectors?</h1>
+    <p>- You, probably</p>
+  </section>
+  <img src="/chaining.png" alt="">
+  <p>While some could argue that this isn't the best practice, since it increases levels of specificity with every link
+    in the chain, I find it very useful for when I'm making lightning talk websites in twenty minutes</p>
+  <p class="magic-time">So let's make a checkbox again, but this time chain something to it</p>
+
+  <input type="checkbox" id="background">
+  <section class="hidden">
+    <h1>SECRET MESSAGE</h1>
+    <h1>-Insert Excited Pam Noises Here-</h1>
+  </section>
+  <section>
+    <h1>DANG that was rad</h1>
+    <h2>How'd it happen though?</h2>
+    <img src="background css.png" class="backgroundimage" alt="">
+    <img src="checkbox.png" class="checkboximage" alt="">
+  </section>
+  <section class="more-checkboxes">
+    <h3>I took a checkbox, and <span>when it was checked</span>, I changed the CSS properties of the <span>child</span>
+      section and gave it a red
+      background, thus revealing the white text that was there all along</h3>
+    <input type="checkbox" id="third">
+    <section class="more-hidden">
+      <img src="star.jpg" class="star-wars" alt="">
+    </section>
+    <section>
+      <h3>You can modify ANY css properties using chcekboxes! It's awesome! </h3>
+      <img src="again.png" class="starwarsss" alt="">
+      <input type="checkbox" id="grid">
+      <section class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </section>
+    <section class="explanationofgrid">
+      <h3>So now we're changing the contents and layout of our grid, on click of a checkbox!</h3>
+      <h1>"But checkboxes are ugly af and I doubt my user is going to click on them and find that an enjoyable
+        experience"</h1>
+      <h3>-you, hopefully</h3>
+    </section>
+    <section class="labelStart">
+      <h1>You're right!</h1>
+      <h2>Let's learn about something called LABELS</h2>
+      <h3>Labels can be ANYTHING used to REPRESENT your checkboxes!</h3>
+      <h3>Consider the following</h3>
+      <img src="labels.png" class="labelschecks" alt="">
+      <input type="checkbox" id="tablet">
+      <label class="tablet-view" for="tablet">
+        <i class="fas fa-tablet-alt"></i>
+      </label>
+      <section class="mockups">
+        <img src="mockup.png" class="mockup" alt="">
+      </section>
+    </section>
+    <img src="labelschecks.png" class="labellabel" alt="">
+    <img src="labellabellabel.png" class="labellabellabel" alt="">
+  </section>
+  <h1 class="cssissorad">DANG CSS IS SO H*CKIN RAD. SMASH THAT LIKE BUTTON SO I CAN REALLY GO HAM FOR NEXT INNINGS TOP
+    TALKS</h1>
+</body>
+
+</html>

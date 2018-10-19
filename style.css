@@ -1,0 +1,224 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  width: 40rem;
+}
+
+h1 {
+  color: rgb(52, 147, 255);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+h1:hover {
+  animation: 🦄 2s linear infinite;
+}
+
+h3,
+h4 {
+  font-weight: 300;
+}
+
+.first {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 2rem;
+}
+
+span {
+  font-weight: 800;
+}
+
+.first p {
+  display: inline;
+}
+
+@keyframes 🦄 {
+  0% {
+    filter: hue-rotate(-90deg);
+  }
+
+  50% {
+    filter: hue-rotate(90deg);
+  }
+
+  100% {
+    filter: hue-rotate(-90deg);
+  }
+}
+
+.unfortunately {
+  padding-top: 3rem;
+}
+
+.chaining {
+  padding-top: 5rem;
+}
+
+.chaining + p {
+  font-style: italic;
+}
+
+i {
+  font-size: 3rem;
+  padding-top: 0.5rem;
+  animation: bounce 1.5s linear infinite;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+i:hover {
+  color: grey;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 10px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.magic-time {
+  padding-top: 3rem;
+}
+
+.hidden {
+  padding: 5rem;
+}
+
+#background:checked + .hidden {
+  background-color: red;
+}
+
+.hidden h1 {
+  color: white !important;
+}
+
+.star-wars {
+  background: center / cover url(star.jpg);
+  height: 20rem;
+  width: 100%;
+}
+
+#third:checked + .more-hidden {
+  opacity: 0;
+}
+
+.backgroundimage,
+.checkboximage {
+  width: 20rem;
+}
+
+.starwarsss {
+  width: 20rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  grid-gap: 5px;
+  position: absolute;
+  height: 50rem;
+  padding-top: 2rem;
+}
+
+.grid div {
+  height: 5rem;
+  width: 7rem;
+  background-color: green;
+}
+
+.grid div:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+#grid:checked + .grid {
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  grid-gap: 1rem;
+  left: 5rem;
+  height: 10rem;
+}
+
+#grid:checked + .grid div:nth-child(odd) {
+  animation: 🦄 2s linear infinite;
+}
+
+#grid:checked + .grid div:nth-child(even) {
+  width: 5rem;
+  height: 2rem;
+  background-color: black;
+}
+
+#grid:checked + .grid div {
+  width: 15rem;
+  height: 5rem;
+}
+
+.explanationofgrid {
+  margin-top: 50rem;
+}
+
+.fa-tablet-alt {
+  cursor: pointer;
+  transition: 0.2s;
+  padding-top: 5rem;
+}
+
+.fa-tablet-alt:hover {
+  color: rgb(94, 94, 251);
+}
+
+#tablet {
+  display: none;
+}
+
+.labelschecks {
+  width: 40rem;
+  display: block;
+}
+
+.mockup {
+  width: 50rem;
+  left: -5rem;
+  position: relative;
+  opacity: 100;
+  height: 35rem;
+}
+
+#tablet:checked + .tablet-view ~ .mockups {
+  animation: 🦄 2s linear infinite;
+}
+
+.labellabel {
+  width: 40rem;
+}
+
+.labellabellabel {
+  width: 40rem;
+}
+
+.cssissorad {
+  animation: 🦄 2s linear infinite;
+}
